@@ -1,17 +1,4 @@
-<ul>
 
-  <% if admin_signed_in? %>
-  <li>Hello -
-    <%=current_admin.email%>
-  </li>
-  <li>
-    <%= link_to current_admin.email, edit_admin_registration_path%>
-  </li>
-  <li><%= link_to "Sign_out", destroy_admin_session_path, :method => 'delete' %></li>
-
-
-  <%end%>
-</ul>
 <center>
 <h2>Log in</h2>
 

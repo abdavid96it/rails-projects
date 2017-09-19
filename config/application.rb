@@ -16,7 +16,7 @@ module RailsProjects
     :port =>'587',
     :user_name => "letranhbao96@gmail.com",
     :password => "19960412ab",
-    :authentication => :plain,
+    :authentication => 'login',
     :enable_strattls_auto =>true
 
 
