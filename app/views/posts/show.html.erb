@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+<hr>
+
+<p>
+  <strong>Content:</strong>
+  <%= @post.content %>
+</p>
+<hr>
+<center>
+
+  <%if @post.recruiter == current_recruiter%>
+  <%= link_to 'Edit', edit_post_path(@post) %>
+  <%end%>
+  |
+  <%= link_to 'Back', posts_path %>
+</center>

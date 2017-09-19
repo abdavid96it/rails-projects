@@ -1,0 +1,42 @@
+
+<center>
+  <h1>Welcome To Jobs Board</h1>
+</center>
+
+<p id="notice"><%= notice %></p>
+
+
+
+
+<center>
+<h1>Jobs</h1>
+</center>
+
+<table >
+
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <hr>
+
+  <tbody>
+    <% @posts.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.content %></td>
+      <td><%= post.recruiter.email %></td>
+
+
+
+
+
+    </tr>
+
+  </tbody>
+<%end%>
+</table>

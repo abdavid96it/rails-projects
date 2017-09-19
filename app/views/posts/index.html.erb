@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+
+
+
+<center>
+<h1>Jobs</h1>
+</center>
+
+<table >
+
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <hr>
+
+  <tbody>
+    <% @posts.each do |post| %>
+    <tr>
+<%if post.recruiter == current_recruiter%>
+      <td><%= post.title %></td>
+      <td><%= post.content %></td>
+      <td><%= post.recruiter.email %></td>
+      <td><%= link_to 'Show', post %></td>
+      <td><%= link_to 'Edit', edit_post_path(post) %></td>
+      <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+    <%end%>
+
+    </tr>
+
+  </tbody>
+<%end%>
+</table>
+
+
+<br>
+<hr>
+<center>
+  <button type="submit" class="btn btn-default"><%= link_to 'New Post', new_post_path %></button>
+</center>
