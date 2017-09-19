@@ -48289,3 +48289,323 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 150ms (Views: 145.9ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:49:10 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.8ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (52.8ms)
+Completed 200 OK in 788ms (Views: 761.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:49:13 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.1ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.1ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 167ms (Views: 162.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2017-09-19 22:49:14 +0700
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.3ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (180.3ms)
+Completed 200 OK in 353ms (Views: 334.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recruiters/sign_in" for 127.0.0.1 at 2017-09-19 22:49:15 +0700
+Processing by Recruiters::SessionsController#new as HTML
+  Rendering recruiters/sessions/new.html.erb within layouts/application
+  Rendered recruiters/shared/_links.html.erb (2.0ms)
+  Rendered recruiters/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 149ms (Views: 146.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters/sign_in" for 127.0.0.1 at 2017-09-19 22:49:17 +0700
+Processing by Recruiters::SessionsController#new as HTML
+  Rendering recruiters/sessions/new.html.erb within layouts/application
+  Rendered recruiters/shared/_links.html.erb (0.9ms)
+  Rendered recruiters/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 174ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2017-09-19 22:49:18 +0700
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 191ms (Views: 188.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters/sign_in" for 127.0.0.1 at 2017-09-19 22:49:18 +0700
+Processing by Recruiters::SessionsController#new as HTML
+  Rendering recruiters/sessions/new.html.erb within layouts/application
+  Rendered recruiters/shared/_links.html.erb (1.6ms)
+  Rendered recruiters/sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 197ms (Views: 194.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-09-19 22:49:19 +0700
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.3ms)
+  Rendered users/sessions/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 194ms (Views: 175.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/recruiters/sign_in" for 127.0.0.1 at 2017-09-19 22:49:20 +0700
+Processing by Recruiters::SessionsController#new as HTML
+  Rendering recruiters/sessions/new.html.erb within layouts/application
+  Rendered recruiters/shared/_links.html.erb (1.8ms)
+  Rendered recruiters/sessions/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 179ms (Views: 176.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2017-09-19 22:49:20 +0700
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.2ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 203ms (Views: 200.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters/sign_in" for 127.0.0.1 at 2017-09-19 22:49:21 +0700
+Processing by Recruiters::SessionsController#new as HTML
+  Rendering recruiters/sessions/new.html.erb within layouts/application
+  Rendered recruiters/shared/_links.html.erb (1.1ms)
+  Rendered recruiters/sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 197ms (Views: 194.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/recruiters/sign_in" for 127.0.0.1 at 2017-09-19 22:49:33 +0700
+Processing by Recruiters::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KfJGaw8tXKXnc41wspj8CFP1hHcDy5of5Zwy1pMmHiYT+47pclFHbPVTvTFQoIMhtmwfwmm1nx1LZOZdRAgYgw==", "recruiter"=>{"email"=>"recruiter2@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRecruiter Load (0.9ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."email" = ? ORDER BY "recruiters"."id" ASC LIMIT ?[0m  [["email", "recruiter2@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "recruiters" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "recruiters"."id" = ?[0m  [["current_sign_in_at", "2017-09-19 15:49:33.797068"], ["last_sign_in_at", "2017-09-19 03:24:16.772452"], ["sign_in_count", 13], ["updated_at", "2017-09-19 15:49:33.798802"], ["id", 2]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 305ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:49:33 +0700
+Processing by HomeController#index as HTML
+  [1m[36mRecruiter Load (0.3ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? ORDER BY "recruiters"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-09-19 22:49:33 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.3ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? ORDER BY "recruiters"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 151ms (Views: 147.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2017-09-19 22:49:39 +0700
+Processing by PostsController#new as HTML
+  [1m[36mRecruiter Load (0.5ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? ORDER BY "recruiters"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (3.6ms)
+  Rendered posts/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 164ms (Views: 143.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-09-19 22:49:43 +0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.3ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? ORDER BY "recruiters"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.3ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 161ms (Views: 155.3ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/recruiters/sign_out" for 127.0.0.1 at 2017-09-19 22:49:49 +0700
+Processing by Recruiters::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DWwXOO7TtydnGcQvsiQ3TtgTd1ZZd92p+1X2Uyx7GGGp1YUnswudisoVfCEuZDetVdWkSs9h396pFHAn8vQwVQ=="}
+  [1m[36mRecruiter Load (0.6ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? ORDER BY "recruiters"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:49:49 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 143ms (Views: 140.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:52:05 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 198ms (Views: 192.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:52:25 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.1ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 175ms (Views: 171.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:52:47 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.1ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 184ms (Views: 181.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:53:17 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 179ms (Views: 175.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:54:08 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.1ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 172ms (Views: 167.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2017-09-19 22:54:13 +0700
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (2.6ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 182ms (Views: 177.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recruiters/sign_in" for 127.0.0.1 at 2017-09-19 22:54:14 +0700
+Processing by Recruiters::SessionsController#new as HTML
+  Rendering recruiters/sessions/new.html.erb within layouts/application
+  Rendered recruiters/shared/_links.html.erb (2.0ms)
+  Rendered recruiters/sessions/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 178ms (Views: 175.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-09-19 22:54:14 +0700
+Processing by Users::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered users/sessions/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 163ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:54:15 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.3ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.3ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 181ms (Views: 174.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:54:36 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 174ms (Views: 169.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:55:07 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 193ms (Views: 189.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:55:29 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.4ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 255ms (Views: 250.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:55:54 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.0ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 241ms (Views: 236.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2017-09-19 22:56:02 +0700
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.2ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 187ms (Views: 185.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-19 22:56:04 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mRecruiter Load (0.3ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRecruiter Load (0.2ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Recruiter Load (0.1ms)[0m  [1m[34mSELECT  "recruiters".* FROM "recruiters" WHERE "recruiters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 185ms (Views: 180.0ms | ActiveRecord: 1.9ms)
+
+
