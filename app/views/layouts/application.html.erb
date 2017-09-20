@@ -52,6 +52,7 @@
           <%if recruiter_signed_in?%>
           <li><%= link_to current_recruiter.email, edit_recruiter_registration_path%></li>
           <li><%= link_to "Logout", destroy_recruiter_session_path, method: :delete, data: { confirm: 'Are you sure?'}%></li>
+          
 
           <%end%>
           <%if user_signed_in?%>
