@@ -15,6 +15,23 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <style>
+    body{
+
+    background : url(http://www.freebiesgallery.com/wp-content/uploads/2013/08/light-blue-background-3.jpg);
+
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: auto;
+	height: auto;
+
+	background-size: cover;
+
+	z-index: 0;
+    }
+    </style>
 
   </head>
 
@@ -37,9 +54,9 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li ><%= link_to "Admin", new_admin_session_path%></li>
-          <li ><%= link_to "Recruiter", new_recruiter_session_path%></li>
-          <li ><%= link_to "User", new_user_session_path%></li>
+
+          <li ><%= link_to "Post A Job", new_recruiter_session_path%></li>
+          <li ><%= link_to "Login", new_user_session_path%></li>
 
         </ul>
         <form class="navbar-form navbar-left" role="search">
@@ -52,12 +69,14 @@
           <%if recruiter_signed_in?%>
           <li><%= link_to current_recruiter.email, edit_recruiter_registration_path%></li>
           <li><%= link_to "Logout", destroy_recruiter_session_path, method: :delete, data: { confirm: 'Are you sure?'}%></li>
-          
+
 
           <%end%>
           <%if user_signed_in?%>
+          <li><%= link_to "Profile",userinfors_url%></li>
           <li><%= link_to current_user.email, edit_user_registration_path%></li>
           <li><%= link_to "Logout", destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?'}%></li>
+
           <%end%>
 
         </ul>

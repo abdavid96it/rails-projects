@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @userinfor.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @userinfor.last_name %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @userinfor.photo %>
+</p>
+
+<p>
+  <strong>Birth day:</strong>
+  <%= @userinfor.birth_day %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @userinfor.phone %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @userinfor.gender %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @userinfor.address %>
+</p>
+<%if @userinfor.user == current_user%>
+<%= link_to 'Edit', edit_userinfor_path(@userinfor) %>
+  <%end%>
+ |
+<%= link_to 'Back', userinfors_path %>

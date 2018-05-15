@@ -30,8 +30,19 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
-gem 'activeadmin', github: 'activeadmin'
-gem 'rails_admin'
+gem 'bootstrap-sass', '~> 3.3.6'
+
+
+gem 'draper'
+
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+
+
+
+#gem 'rails_admin'
+#gem 'rails_admin_rollincode', '~> 1.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 #gem 'sass-rails', '~> 5.0'
@@ -44,6 +55,9 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'pry'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+
 
 
 end

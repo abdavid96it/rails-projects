@@ -1,0 +1,52 @@
+<%= form_with(model: userinfor, local: true) do |form| %>
+  <% if userinfor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(userinfor.errors.count, "error") %> prohibited this userinfor from being saved:</h2>
+
+      <ul>
+      <% userinfor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :userinfor_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :userinfor_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo %>
+    <%= form.text_field :photo, id: :userinfor_photo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birth_day %>
+    <%= form.date_select :birth_day, id: :userinfor_birth_day %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, id: :userinfor_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.check_box :gender, id: :userinfor_gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_area :address, id: :userinfor_address %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
