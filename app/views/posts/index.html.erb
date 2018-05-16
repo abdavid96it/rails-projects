@@ -1,19 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-
-
-
 <center>
-<h1>Jobs</h1>
+  <h1>Jobs</h1>
 </center>
 
 <table >
 
   <thead>
     <tr>
+
       <th>Title</th>
       <th>Content</th>
-      <th>Email</th>
+      <th>Recruiter</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,7 +20,8 @@
   <tbody>
     <% @posts.each do |post| %>
     <tr>
-<%if post.recruiter == current_recruiter%>
+      <%if post.recruiter == current_recruiter%>
+
       <td><%= post.title %></td>
       <td><%= post.content %></td>
       <td><%= post.recruiter.email %></td>
@@ -30,14 +29,13 @@
       <td><%= link_to 'Edit', edit_post_path(post) %></td>
       <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
-    <%end%>
+      <%end%>
 
     </tr>
 
   </tbody>
-<%end%>
+  <%end%>
 </table>
-
 
 <br>
 <hr>
